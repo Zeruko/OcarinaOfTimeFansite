@@ -1,0 +1,283 @@
+body{
+    width: 100%;
+    margin: 10px;
+}
+
+
+/*SIDEBAR =========================================================*/
+#sidebar{
+    float: left;
+    width: 15%;
+}
+
+#Sheep{
+    display: flex;
+}
+
+.SheepSmall{
+    height: 20%;
+}
+
+.SheepLarge{
+    display: none;
+}
+
+.links ul{
+    padding: 0;
+}
+
+.links ul li{
+    list-style-type: none;
+    width: 90%;
+    margin: 8px;
+}
+
+.links a{
+    color: black;
+    text-decoration: none;
+}
+
+.links ul li:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.links ul li img{
+    float: left;
+    width: 60%
+    height: 2.5%
+}
+
+.links ul li p{
+    float: left;
+    margin-left: 20px;
+    margin-top: 25px;
+    font-size: 20px;
+    font-family:fantasy;
+}
+
+#podcast p{
+    padding-left: 25px;
+}
+
+#podcast img{
+    position: relative;
+    left: 10px;
+}
+
+#externalLinksDiv{
+    margin: 0 0px 0 40px;
+}
+
+#externalLinks{
+    position: relative;
+    right: 20px;
+    margin-top: 35px;
+    border-bottom: 2px dotted black;
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+#icons{
+    position: relative;
+    top: -15px;
+    right: -21px;
+}
+
+#icons ul{
+    padding: 0;
+}
+
+#icons ul li {
+    list-style-type: none;
+}
+
+#icons ul li img{
+        float: left;
+        width: 20%;
+        height: 5%;
+        margin: 3px
+}
+
+/*Main Banner==========================================*/
+
+#mainWrapper {
+    width: 85%;
+    float: right;
+    color: black;
+}
+
+#bannerPic{
+    height: 600px;
+    margin: 25px;
+}
+
+#bannerPic img{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+/*Mailing List============================================================*/
+
+#mail{
+    display: flex;
+    padding: 0px;
+}
+
+#mail img{
+    flex-basis: 9%;
+    height: 50px;
+    padding: 10px;
+    padding-right: 40px;
+    padding-left: 25px;
+}
+
+#mail p{
+    font-family: sans-serif;
+    font-style: oblique;
+    padding-right: 0px;
+    flex: 1;
+}
+
+#emailForm{
+    flex: 1;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#textBox{
+    flex: 1;
+}
+
+#submitButton{
+    flex: 1;
+}
+
+#emailForm input[type=submit]{
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+
+/*Articles================================================*/
+
+.articles{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles img{
+    width: 100%;
+    height: 200px;
+}
+
+.articles div{
+    flex-basis: 23%;
+    margin: 10px;
+}
+
+
+/*Footer==================================*/
+
+footer{
+    height: 150px;
+    background: linear-gradient(white, grey);
+}
+
+#footerTag p{
+    position: relative;
+    top: 100px;
+}
+
+
+
+
+/*MEDIA QUERIES==========================================================================================================*/
+
+
+@media screen and (min-width: 1900px){
+    .SheepLarge{
+        display: block;
+        height: 200px;
+    }
+    
+    .SheepSmall{
+        display: none;
+    }
+    
+    .links ul{
+        text-align: center;
+    }
+    
+    .links li{
+        display: inline-block;
+    }
+
+}
+
+@media screen and (max-width: 1190px ){
+    /*Make the sidebar text go under the images.*/
+    .links ul{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .links ul a li{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .links ul a li p{
+        margin: auto;
+
+    }
+    
+    .links img{
+        margin: auto;
+    }
+    
+    #podcast img {
+        left: 0px;
+    }
+    
+    #podcast p{
+        padding-left: 0px;
+    }
+    
+    /*Make the articles take up 50% of the space*/
+    
+    .articles div{
+    flex-basis: 45%;
+    margin: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 750px){
+    #Sheep{
+       display: none;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    
+    .articles {
+        padding-left: 13px;
+    }
+    
+    .articles div {
+        flex-basis: 90%;
+    }
+    
+}
+
+
+
+
+

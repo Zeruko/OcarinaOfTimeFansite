@@ -1,0 +1,7 @@
+
+Problems:
+1) Whenever you make bring the website under 850px, the menu will open.
+	Have to stop this.
+ 
+ 
+ 
