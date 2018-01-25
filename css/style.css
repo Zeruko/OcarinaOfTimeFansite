@@ -24,6 +24,7 @@ h3{
 
 p{
     font-family: "Old Standard TT";
+    font-size: 16px;
 }
 
 /*Navbar styles===============================================*/
@@ -64,6 +65,10 @@ p{
     font-family: "EB Garamond";
 }
 
+.toggle-nav{
+    display: none;
+}
+
  /*Body=================================================*/
 
 /*Banner*/
@@ -92,6 +97,10 @@ p{
 }
 
 /*Articles===============================================*/
+.articleHeading{
+    font-size: 42px;
+}
+
 #articleContainer{
     border-left: 40px solid black;
     border-right: 40px solid black;
